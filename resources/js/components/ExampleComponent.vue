@@ -28,7 +28,7 @@
     mounted() {
             Echo.channel('canal-mensagem').listen('.EntregaMensagem', (e) => {
                 //console.log(e.mensagem.titulo)
-            this.mensagem.push(e)
+            this.mensagem.push(e.mensagem)
             
             })
         }

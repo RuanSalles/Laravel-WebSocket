@@ -2096,7 +2096,7 @@ __webpack_require__.r(__webpack_exports__);
 
     Echo.channel('canal-mensagem').listen('.EntregaMensagem', function (e) {
       //console.log(e.mensagem.titulo)
-      _this.mensagem.push(e);
+      _this.mensagem.push(e.mensagem);
     });
   }
 });

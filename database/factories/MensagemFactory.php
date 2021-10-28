@@ -2,7 +2,9 @@
 
 namespace Database\Factories;
 
+
 use Illuminate\Database\Eloquent\Factories\Factory;
+
 
 class MensagemFactory extends Factory
 {
@@ -14,7 +16,8 @@ class MensagemFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'titulo' => $this->faker->title(),
+            'mensagem' => $this->faker->title()
         ];
     }
 }
